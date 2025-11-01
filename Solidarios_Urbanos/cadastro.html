@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voluntário</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">&#x1F307; Solidários Urbanos</a></h1> 
+        <nav>
+            <ul>
+                <li><a href="projeto.html">Projetos Sociais</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="doação.html">Doação</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+    
+        <section>
+            <h2>Sua ajuda pode fazer a diferença para alguém</h2>
+            <p>Se você se interessou pela nossa ONG e quer fazer parte dessa missão, independente de sua disponibilidade, faça seu cadastro para se voluntariar.</p>
+        </section>
+
+        <section>
+            <form> <!-- Cadastro de voluntário -->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>Preencha todos os campos, pois são obrigatórios.</p> 
+            
+                    <label for="nome_completo">Nome Completo:</label>
+                    <input type="text" id="nome_completo" name="nome_completo" pattern="[a-zA-Zà-úÀ-ÚçÇ ]+" 
+                           title="Apenas letras e acentos" required> 
+
+                    <label for="CPF">CPF:</label>
+                    <input type="text" id="CPF" name="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}"
+                           placeholder="000.000.000-00" title="Formato: 000.000.000-00" required>  
+
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                           placeholder="(00) 00000-0000" title="Formato: (00) 00000-0000" required> 
+
+                    <label for="endereçovol">Endereço:</label>
+                    <input type="text" id="endereçovol" name="endereçovol" 
+                           placeholder="Rua, Número, Bairro" required>
+
+                    <label for="CEP">CEP:</label> 
+                    <input type="text" id="CEP" name="CEP" pattern="[0-9]{5}-[0-9]{3}" 
+                           placeholder="00000-000" required>
+
+                    <label for="CidadeEstado">Cidade e Estado:</label>
+                    <input type="text" id="CidadeEstado" name="CidadeEstado" pattern="[a-zA-Zà-úÀ-ÚçÇ ]+" 
+                           placeholder="São Paulo/SP" title="Apenas letras e acentos" required>
+
+                </fieldset>
+
+                <button type="submit">Cadastrar</button>
+            </form>
+        <section>
+
+    <section>
+        <h2>Contato</h2>
+            <address>
+                <p>&#x1F4CD Avenida da Sabedoria, 234, Bairro Jardim Éden - São Paulo/SP</p>
+                <p>&#128241 (11) 00000-0000</p>
+                <p>&#128231 contato@ongsolidariosurbanos.org.br</p>
+            </address>
+    </section>
+            
+</main> <footer>
+        <p>&copy; 2025 Todos os direitos reservados a Solidários Urbanos</p>
+    </footer>
+</body>
+</html>
